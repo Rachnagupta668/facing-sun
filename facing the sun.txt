@@ -1,0 +1,50 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+public class Main
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+  Scanner sc = new Scanner(System.in);
+      int n = sc.nextInt();
+      int arr [] = new int[n];
+      //take the element of the arry as input
+      for(int i = 0; i<n; i++){
+        arr[i] = sc.nextInt();
+      }
+    //  now the real game begain start
+//    int pretallest = -1;
+//       int count =  0; //it is the count of biuildng that will recive the sun light
+//       for(int i = 0; i<n; i++){
+//         if(arr[i]>pretallest){ //previous tallest
+//           count++;
+//             pretallest = arr[i];
+//         }
+        
+//       }
+//       System.out.println(count);
+//         }
+// }
+//another approch
+int pretallest = arr[0];
+int count = 1;
+for(int i = 1; i<n; i++){
+  if(arr[i]>pretallest){
+    count++;
+    pretallest = arr[i];
+    
+  }
+}
+System.out.println(count);
+
+      }
+}
+
+
+
+
+
+
+
+
